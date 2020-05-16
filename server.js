@@ -11,10 +11,8 @@ const echo = require("./routes/echo.route");
 
 const server = express();
 
-//var host = config.host;
-//var port = config.port;
-var host = '0.0.0.0';
-var port = 3000;
+var host = config.host;
+var port = config.port;
 
 var cors_allow = config.cors_allow;
 
@@ -44,6 +42,6 @@ server.listen(port, host, (err) => {
       return console.log('something bad happened', err)
     }
   
-    console.log('Build version: %s', process.env.version);
+    console.log('Build version: %s', config.version);
     console.log('Server ready on %s %s', host, port);
   })

@@ -4,6 +4,7 @@
   "description": "Basic Echo REST service",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon server.js",
     "start": "node server.js"
   },
   "keywords": [],
@@ -16,5 +17,7 @@
     "express": "^4.17.1",
     "http": "0.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
 }

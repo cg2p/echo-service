@@ -1,6 +1,6 @@
 //ping
 exports.ping = function (req, res) {
-  res.send('ping!\n');
+  res.json({outputText: 'ping!\n'});
   console.log("/ ping fired");
 };
 
